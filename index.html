@@ -1,73 +1,654 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="CSS files\style.css">
-        <title>Gateway Cyber</title>
+<html lang="en">
+	<head>
+		<title>Gateway Digital Solution</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <style>
-        .ftco-navbar-light.scrolled .nav-item.cta > a span {
-            display: inline-block;
-            color: #fff !important; 
-        }
-        .nav-item{
-            display: inline-block;
-            margin-inline: 46px;
-            margin-top: 10px;
-            background-color: blanchedalmond;
-            border-radius: 2px;
-            border-color: red;
-            border-width: 3px;
-            border-style: dashed;
-        }
-        .navbar-brand{
-            display: inline-block;
-        }
-        </style>
-    </head>
-    <Body>
-       
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">Gateway Digital</a>
-              <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-              </button>
+		<style>
+			body{
+				background-color: #0b0c10;
+				color: white;
+			}
+			.navbar-brand{
+				display: inline-block;
+			}
+			.navbar-nav {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				height: 30px;
+				background-color: #0b0c10; 
+			}
+
+			.nav-item {
+				flex: 1;
+				-align: center; 
+			}
+			.container1{
+				background-color: none;
+				width: 100%;
+				color: rgb(205, 25, 25);
+			}
+
+			.nav-link {
+				padding: 10px; 
+				align-items: center;
+			}
+			#home-section {
+ 				 background-color: green; 
+			}
+			.big{
+				display: flex;
+ 				justify-content: center;
+  				align-items: center;
+				font-size: 28px;
+				color: brown;
+				
+			}
+			.row {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr); /* Two columns */
+				gap: 10px; /* Gap between items */
+			}
+
+			.mb-5 {
+				background-color: #008080;
+				padding: 20px;
+				text-align: center;
+				color: rgb(165, 15, 10);
+				border-radius: 8px;
+			}
+			.mb-5:hover{
+				background-color: #114232;
+				color: red;
+
+			}
+			.contact{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+
+				/*the beeging of progress barr*/
+			.progress {
+				background-color: #f5f5f5;
+				border-radius: 20px;
+				height: 20px;
+				margin-bottom: 20px;
+				overflow: hidden;
+			}
+
+			.progress-bar {
+				background-color: #007bff;
+				color: white;
+				text-align: center;
+				transition: width 2.5s ease;
+			}
+
+			.progress-bar span {
+				display: block;
+				padding: 3px 0;
+			}
+
+			.animate-box {
+				animation: fadeInUp 4.2s ease;
+			}
+
+			@keyframes fadeInUp {
+			0% {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			}
+
+			.active {
+			width: 100% !important;
+			}
+			/*end of the progrees code*/
+
+			.box {
+        	padding: 20px;
+        	text-align: center;
+			border-radius: 10px;
+        	background-color: white; /* Set background color for the box */
+        	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+			.backi {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url('background.jpg'); /* Replace 'your_image.jpg' with your image file */
+				background-size: cover;
+				filter: saturate(200%); /* Adjust the saturation level as needed */
+			}
+			.linkon{
+				display: inline-block;
+			}
+			.media{
+				display: inline-block;
+				margin-left: 0%;
+				margin-right: 0%;
+			}
+
+		</style>
+	</head>
+
+
+	
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<div class="backi">	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container1">
+	      <a class="navbar-brand" href="index.html"><strong>Gateway Digital solution</strong></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Achievements</span></a></li>
+            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#social_page-section" class="nav-link"><span>Social pages</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            <li class="nav-item"><a href="#Downloads-section" class="nav-link"><span>Downloads</span></a></li>
+          </ul>
+	      </div>
+	    </div>
+	</nav>
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center low-saturation" style="background-image:url(images/Face.png);"></div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="ABOUT">
+							<h1 class="big"><strong>About</strong></h1>
+							<h2 class="mb-4">About Us</h2>
+							<p>We are a small cyber running all your computer needs.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+    <section class="ftco-section" id="services-section">
+    	<div class="container">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Services</h1>
+            <h2 class="mb-4">Services</h2>
+            <p>We are esteemed to our clients to provide quality sevices and we strive our very best make sure we meet the customers needs and interest</p>
+          </div>
+        </div>
+    		<div class="row">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Computer lessons</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Internet services</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Photocopying and printing</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Graphic design</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Data Analysis</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">computer Programing</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+
+		
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+		  <div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Skills</h1>
+			  <h2 class="mb-4">Our Skills</h2>
+			  <p>PLANING</p>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6 animate-box">
+			  <div class="progress-wrap ftco-animate">
+				<h3>Photoshop</h3>
+				<div class="progress">
+				  <div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+					aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					<span><strong>0%</strong></span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 animate-box">
+			  <div class="progress-wrap ftco-animate">
+				<h3>jQuery</h3>
+				<div class="progress">
+				  <div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+					aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					<span><strong>0%</strong></span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="progress-wrap ftco-animate">
+				  <h3>Data Analaysis</h3>
+				  <div class="progress">
+					<div class="progress-bar color-2" role="progressbar" aria-valuenow="96"
+					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					  <span><strong>0%</strong></span>
+					</div>
+				  </div>
+				</div>
+			</div>  
+			<div class="col-md-6 animate-box">
+				<div class="progress-wrap ftco-animate">
+				  <h3>Computer Basics</h3>
+				  <div class="progress">
+					<div class="progress-bar color-2" role="progressbar" aria-valuenow="98"
+					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					  <span><strong>0%</strong></span>
+					</div>
+				  </div>
+				</div>
+			</div>  
+			<div class="col-md-6 animate-box">
+				<div class="progress-wrap ftco-animate">
+				  <h3>Computer Programming</h3>
+				  <div class="progress">
+					<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					  <span><strong>0%</strong></span>
+					</div>
+				  </div>
+				</div>
+			</div>  
+			<!-- Add other progress bars here -->
+		  </div>
+		</div>
+	  </section>
+	  <script>
+	  	document.addEventListener("DOMContentLoaded", function() {
+		var skillsSection = document.getElementById('skills-section');
+		var progressBars = skillsSection.querySelectorAll('.progress-bar');
+		
+		function isInViewport(elem) {
+		  var bounding = elem.getBoundingClientRect();
+		  return (
+			bounding.top >= 0 &&
+			bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+		  );
+		}
+		
+		function animateBars() {
+		  progressBars.forEach(function(bar) {
+			if (isInViewport(bar)) {
+			  bar.classList.add('active');
+			  var targetWidth = parseInt(bar.getAttribute('aria-valuenow'));
+			  var span = bar.querySelector('span');
+			  var start = 0;
+			  var step = targetWidth / 100; // Change number gradually by dividing target value by 100
+			  var interval = setInterval(function() {
+				start += step;
+				span.textContent = Math.round(start) + '%';
+				if (start >= targetWidth) {
+				  clearInterval(interval);
+				}
+			  }, 10);
+			}
+		  });
+		}
+		
+		window.addEventListener('scroll', animateBars);
+	  });
+	  </script>
+		 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Our Projects</h2>
+            <p>We are focused in making more lifes understand computer hence we create computer lessons at afoordable price</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">computer training &amp; computer coaching</a></h3>
+	    					<span>Computer classes</span>
+	    				</div>
+    				</div>
+  				</div>
+
+
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Internet &amp; Emailing</a></h3>
+	    					<span>Computer in general</span>
+	    				</div>
+    				</div>
+    	</div>
+    </section>
+
+
+    <section class="section" id="social_page-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Social Pages</h1>
+            <h2 class="mb-4">Our Social Pages</h2>
+            <p>under construction</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">April 01 2024</span>
+	                	<a href="https://www.linkedin.com/in/isaac-masila-6266752b8/" class="mr-2">Admin</a>
+	                	<a href="https://www.linkedin.com/in/isaac-masila-6266752b8/" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+                <h3 class="heading"><a href="single.html">How is our computer classes</a></h3>
+                <p>Please give us a feedback </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">April 01 2024</span>
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+                <h3 class="heading"><a href="single.html">How is our qulity of services</a></h3>
+                <p>Please give us a feedback</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">April 1 2024</span>
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+                <h3 class="heading"><a href="single.html">Growth requires taking in infromation that are ment to add a positive brick in the cracked wall</a></h3>
+                <p>Give suggestions you wou;ld wish they were improved or were to be implemented</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    	<div class="container">
+				<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Complete Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="150">0</strong>
+                <span>Happy Customers</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="200">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>I'm <span>Available</span> for remote freelancing</h2>
+						<p>I am looking forward to formin an aliance with you.</p>
+						<p class="mb-0"><a href="https://www.linkedin.com/in/masila-robert-a4a78398/" target="_blank" class="btn btn-primary py-3 px-5">Hire me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="contact" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Us</h2>
+            <p>We are always open for any inquiry</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-1s d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://1234567920"> 0705793900 </a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:gatewaycybercomp@gmail.com">gatewaycybercomp@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="#">still thinkiing</a></p>
+	          </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6 d-flex">
+          	<div class="img" style="background-image: url(images/logo.png);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>We are a small cyber cafe that is realy intriged by the technology world and aimed at amking a difference in the community by omacting skills to youths and also performing all of your desiredd needs at affordable price</p>
+              <ul class="media">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span>twiter</a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span>facebook</a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span>instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="linkon">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="service-1"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><a href="tel:0705793900"><span class="icon icon-phone"></span><span class="text">0705793900</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">gatewaycybercomp@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+           
+          </div>
+        </div>
+      </div>
+    </footer>
     
-              <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                  <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                  <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-                  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Achievements</span></a></li>
-                  <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-                  <li class="nav-item"><a href="#social_page-section" class="nav-link"><span>Social pages</span></a></li>
-                  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                  <li class="nav-item"><a href="#Downloads-section" class="nav-link"><span>Downloads</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-            <div class="container">
-              <div class="row d-flex">
-                <div class="col-md-6 col-lg-5 d-flex">
-                  <div class="img-about img d-flex align-items-stretch">
-                    <div class="overlay"></div>
-                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/Mine.JPG);">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                  <div class="row justify-content-start pb-3">
-                    <div class="col-md-12 heading-section ftco-animate">
-                      <h1 class="big">About</h1>
-                      <h2 class="mb-4">About Us</h2>
-                      <p>We are a small growing tech company. dealning with all computer related programs.......</p>
-                    </div>
-                  </div>                  
-                </div>
-              </div>
-            </div>
-          </section>
-    </Body>
+  
+
+  	<!-- loader -->
+  	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  </body>
 </html>
