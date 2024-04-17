@@ -7,7 +7,7 @@
 
 		<style>
 			body{
-				background-color: #0b0c10;
+				background-color: #1c57ab;
 				color: white;
 			}
 			.navbar-brand{
@@ -24,6 +24,7 @@
 			.nav-item {
 				flex: 1;
 				-align: center; 
+				font-weight: bolder;
 			}
 			.container1{
 				background-color: none;
@@ -135,13 +136,41 @@
 				margin-left: 0%;
 				margin-right: 0%;
 			}
+			/* Style for the About section */
+			.ftco-about {
+				width: 100%; /* Make the section full width */
+				display: flex;
+				justify-content: center; /* Center content horizontally */
+				align-items: center; /* Center content vertically */
+			}
+
+			/* Style for the About content */
+			.About {
+				text-align: left; /* Align text to the left */
+				max-width: 600px; /* Limit the width of the content */
+			}
+
+			/* Style for the paragraph */
+			.ABOUT p {
+				width: 100%; /* Make the paragraph cover the entire line */
+				display: block; /* Ensure the paragraph is displayed as a block element */
+			}
+			.H2{
+				color: #0b0c10;
+			}
+			.progress-bar {
+            height: 80px; /* Adjusted height */
+			}
+			.about-cyber{
+				font-size: larger;
+			}
 
 		</style>
 	</head>
 
 
 	
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" background="images\background.png">
 	<div class="backi">	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container1">
@@ -151,7 +180,7 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
+          	<ul class="navbar-nav nav ml-auto">
             <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
             <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
             <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
@@ -160,25 +189,32 @@
             <li class="nav-item"><a href="#social_page-section" class="nav-link"><span>Social pages</span></a></li>
             <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
             <li class="nav-item"><a href="#Downloads-section" class="nav-link"><span>Downloads</span></a></li>
-          </ul>
+          	</ul>
 	      </div>
 	    </div>
+		<script> 
+		// Smooth scrolling function
+			function scrollToSection(sectionId) {
+				var section = document.getElementById(sectionId);
+				section.scrollIntoView({ behavior: 'smooth' });
+			}
+			</script>
 	</nav>
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row d-flex">
+			<div class="ABOUT">
 				<div class="col-md-6 col-lg-5 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center low-saturation" style="background-image:url(images/Face.png);"></div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
+				<div class="About">
+					<div class="ABOUT">
 						<div class="ABOUT">
-							<h1 class="big"><strong>About</strong></h1>
-							<h2 class="mb-4">About Us</h2>
-							<p>GDS is a data, analytical and programing firm focused on driving technology adoption and help in decision making through insight analysis. We offer on demand data analysis, programming and digital learning. Our mission is to help you use data to make informed desicion, create programs that will ease the flow of work and  train your staff modern tools and programs. </p>
+							<h1 class="big" style="font-size: 30px;"><strong>About</strong></h1>
+							<h2 class="mb-4" style="color: darkgrey;">About Us</h2>
+							<p class="about-cyber">GDS is a data analytical and programing startup firm focused on driving technology adoption and help in decision making through insightful data analysis. We offer on demand data analysis, programming and digital learning. Our mission is to help you use data to make informed desicion, create programs that will ease the flow of work and  train your staff on modern tools, programs and technology. </p>
 						</div>
 					</div>
 				</div>
@@ -191,9 +227,9 @@
     	<div class="container">
     		<div class="row justify-content-center py-5 mt-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
+          	<h1 class="big big-2" style="font-size: 30px;">Services</h1>
             <h2 class="mb-4">Services</h2>
-            <p>We are esteemed to our clients to provide quality sevices and we strive our very best make sure we meet the customers needs and interest</p>
+            <p>We provide quality and state of the art sevices. We strive our very best make sure we meet the customers needs and interest.</p>
           </div>
         </div>
     		<div class="row">
@@ -254,7 +290,27 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">programming languages</h3> <!-- HTML, CSS, PYHTON -->
+								<h3 class="mb-5">Programming Languages</h3> <!-- HTML, CSS, PYHTON -->
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5"><a href="https://docs.google.com/presentation/d/1H9mzMCtyfqDRgBfssQ5c6WQCzn-JRAEU324ddJF2m3E/edit?usp=sharing" target="_blank">Dashboards</a></h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Story Telling</h3>
 							</div>
 						</a>
 					</div>
@@ -264,7 +320,7 @@
 								<i class="flaticon-ideas"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Data collection222222</h3>
+								<h3 class="mb-5">Data collection</h3>
 							</div>
 						</a>
 					</div>
@@ -275,61 +331,53 @@
 		
 	<section class="ftco-section" id="skills-section">
 		<div class="container">
-		  <div class="row justify-content-center pb-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Skills</h1>
-			  <h2 class="mb-4">Our Skills</h2>
+		  <div class="#">
+			<div class="col-md-12 heading-section text-center ftco-animate" style="text-align: center;">
+			  <h1 class="big big-2" style="font-size: 30px;">Skills</h1>
+			  <h2 class="mb-4" style="color: darkgrey;">Our Skills</h2>
 			  <p>PLANING</p>
 			</div>
 		  </div>
 		  <div class="row">
 			<div class="col-md-6 animate-box">
-			  <div class="progress-wrap ftco-animate">
-				<h3>Photoshop</h3>
+			  <div class="progress-wrap ftco-animate" style="text-align: center;">
+				<h2 class="H2">data extraction, transformation and exploration</h2>
+				<h4>data exploration and data mining.</h4>
 				<div class="progress">
-				  <div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+				  <div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
 					aria-valuemin="0" aria-valuemax="100" style="width:0%">
 					<span><strong>0%</strong></span>
 				  </div>
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-6 animate-box">
+			<div class="col-md-6 animate-box" style="text-align: center;">
 			  <div class="progress-wrap ftco-animate">
-				<h3>jQuery</h3>
+				<h2 class="H2">Programming</h2> <!--java script, webscripting, python, SQL-->
+				<h4>Java script, python and SQL</h4>
 				<div class="progress">
-				  <div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+				  <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
 					aria-valuemin="0" aria-valuemax="100" style="width:0%">
 					<span><strong>0%</strong></span>
 				  </div>
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-6 animate-box">
+			<div class="col-md-6 animate-box" style="text-align: center;">
 				<div class="progress-wrap ftco-animate">
-				  <h3>Data Analaysis</h3>
+				  <h2 class="H2">Data Visualization</h2>
+				  <h4>"graphical representation of information"</h4>
 				  <div class="progress">
-					<div class="progress-bar color-2" role="progressbar" aria-valuenow="96"
+					<div class="progress-bar color-2" role="progressbar" aria-valuenow="100"
 					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
 					  <span><strong>0%</strong></span>
 					</div>
 				  </div>
 				</div>
 			</div>  
-			<div class="col-md-6 animate-box">
+			<div class="col-md-6 animate-box" style="text-align: center;">
 				<div class="progress-wrap ftco-animate">
-				  <h3>Computer Basics</h3>
-				  <div class="progress">
-					<div class="progress-bar color-2" role="progressbar" aria-valuenow="98"
-					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
-					  <span><strong>0%</strong></span>
-					</div>
-				  </div>
-				</div>
-			</div>  
-			<div class="col-md-6 animate-box">
-				<div class="progress-wrap ftco-animate">
-				  <h3>Computer Programming</h3>
+				  <h2 class="H2">Data Reporting</h2><!--dont knmow-->
 				  <div class="progress">
 					<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
 					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
@@ -338,10 +386,21 @@
 				  </div>
 				</div>
 			</div>  
+			<div class="col-md-6 animate-box" style="text-align: center;">
+				<div class="progress-wrap ftco-animate">
+				  <h2 class="H2" >Dashboards</h2>
+				  <div class="progress">
+					<div class="progress-bar color-2" role="progressbar" aria-valuenow="100"
+					  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					  <span><strong>0%</strong></span>
+					</div>
+				  </div>
+				</div>
+			</div>  
 			<!-- other progress bars -->
 		  </div>
-		</div>
-	  </section>
+			</div>
+	  	</section>
 	  <script>
 	  	document.addEventListener("DOMContentLoaded", function() {
 		var skillsSection = document.getElementById('skills-section');
@@ -383,7 +442,7 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
+          	<h1 class="big big-2" style="font-size: 30px;">Projects</h1>
             <h2 class="mb-4">Our Projects</h2>
             <p>We are focused in making more lifes understand computer hence we create computer lessons at afoordable price</p>
           </div>
@@ -393,24 +452,32 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">computer training &amp; computer coaching</a></h3>
+	    					<h3><a href="https://docs.google.com/presentation/d/14i3No_H9AaikKy3_gUJkcbEQQEW5nyWk2aNKWs8L7AY/edit?usp=sharing" target="_blank">computer training &amp; computer coaching</a></h3>
 	    					<span>Computer classes</span>
 	    				</div>
     				</div>
-  				</div>
+  			</div>
 
 
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Internet &amp; Emailing</a></h3>
-	    					<span>Computer in general</span>
-	    				</div>
-    				</div>
+    		<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+					<h3><a href="#">Internet &amp; Emailing</a></h3>
+					<span>Computer in general</span>
+				</div>
+    		</div>
+			<!--Creating Dashboards-->
+			<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+					<h3><a href="https://docs.google.com/presentation/d/1H9mzMCtyfqDRgBfssQ5c6WQCzn-JRAEU324ddJF2m3E/edit?usp=sharing" target="_blank">Dash Projects</a></h3>
+					<span>We have created dashboard project which has helped in making companies run more smoothly</span>
+				</div>
+    		</div>
     	</div>
     </section>
 
-
+		<!--blog beginning-->
     <section class="section" id="social_page-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
@@ -671,7 +738,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
-              <p>We are a small cyber cafe that is realy intriged by the technology world and aimed at amking a difference in the community by omacting skills to youths and also performing all of your desiredd needs at affordable price</p>
+              <p class="about-cyber">We are a small cyber cafe that is realy intriged by the technology world and aimed at amking a difference in the community by omacting skills to youths and also performing all of your desiredd needs at affordable price</p>
               <ul class="media">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span>twiter</a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span>facebook</a></li>
